@@ -433,12 +433,18 @@
       </div>
       <div class="bottom3">
         <h4>zapisz sie do newslettera</h4>
-        <form name="signup-form" autocomplete="on" novalidate>
+        <form class="signup-form" name="signup-form" autocomplete="on" novalidate>
           <label class="form-newsletter">
             <span class="label-text"></span>
-            <input type="text" class="form-input-newsletter" name="email" placeholder="E-mail">
+            <input type="email" class="form-input-newsletter" name="email" placeholder="E-mail">
           </label>
-          <button type="submit" class="slider-button">Zapisz się</button>
+          <button type="submit" class="newsletter-button">
+            Zapisz się
+            <svg class="send-icon" width="24" height="24" >
+              <use href="./images/symbol-defs-new.svg#icon-send"
+              ></use>
+            </svg>
+          </button>
         </form>
       </div>
     </section>
@@ -452,31 +458,38 @@
         <form class="form">
           <label class="form-label">
             <span class="label-text">Imie</span>
+            <div class="input-icon">
+              <svg class="form-icon" width="12" height="12">
+                <use href="./images/symbol-defs-new.svg#icon-person"></use>
+              </svg>
             <input type="text" class="form-input" name="name">
+          </div>
           </label>
           <label class="form-label">
             <span class="label-text">Telefon</span>
-            <input type="text" class="form-input" name="phone">
+            <input type="tel" class="form-input" name="phone">
           </label>
           <label class="form-label">
             <span class="label-text">Email</span>
-            <input type="text" class="form-input" name="email">
+            <input type="email" class="form-input" name="email">
           </label>
           <label class="form-label">
             <span class="label-text">Komentarz</span>
             <textarea class="form-input-comment" name="feedback" rows="5" placeholder="Wprowadź tekst"></textarea>
           </label>
-          <div class="form-label">
-          <button class="submit-button" type="submit">Wyślij</button>
+          <div class="form-rules">
+            <div class="checkbox">
+              <input type="checkbox" class="modal-checkbox" name="approves" value="rulebook" id="rulebook">
+              <label class="rules">Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a></label>
+            </div>
+            </div>
+          <div class="form-button">
+          <button class="submit-button" type="submit">Wyślij  </button>
         </div>
-        <div class="form-label">
-        <div class="checkbox">
-          <input type="checkbox" class="modal-checkbox" name="approves" value="rulebook" id="rulebook">
-          <label class="rules">Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a></label>
-        </div>
-        </div>
+        
         </form>
     </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
+<div class="card-holder">
