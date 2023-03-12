@@ -789,44 +789,83 @@ p {
     border-radius: 4px;
 }
 
+.rules-link {
+    color: var(--brand-color);
+}
+  
+
+
+
+
+
 .rules {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: #757575;  
-}
-.rules a {
-    color: #2196F3;
-}
-.form-checkbox {
+    color: #757575; 
+  }
+  
+  .rules-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .rules input {
     position: absolute;
     opacity: 0;
-    cursor: pointer;
     height: 0;
     width: 0;
-}
-.box-icon {
-    width: 16px;
-    height: 15px;
-    cursor: pointer;
-}
-.check-icon {
-    width: 16px;
-    height: 15px;
+  }
+  
+  .checkmark {
+    position: absolute;
+    margin: 3px;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 15px;
+  }
+  .check {
+    position: absolute;
+    margin: 3px;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 15px;
     visibility: hidden;
-}
-.form-checkbox:checked ~ .check-icon {
-    background-color: blue;
+  }
+  
+  .rules input:checked ~ .check {
     visibility: visible;
-}
-.check-icon:checked ~ .box-icon {
-    background-color: blue;
-    visibility: visible;
-}
-       
+  }
+  
+  
+  
+ 
+
+
+
+
+
+
+
+
+
+
 
 
 .form-button {
@@ -847,6 +886,7 @@ p {
 }
 
 .form-rules {
+    position: relative;
     display: flex;
     justify-content: center;
     margin-top: 20px;
