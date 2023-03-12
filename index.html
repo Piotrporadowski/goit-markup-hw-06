@@ -436,7 +436,9 @@
         <form class="signup-form" name="signup-form" autocomplete="on" novalidate>
           <label class="form-newsletter">
             <span class="label-text"></span>
-            <input type="email" class="form-input-newsletter" name="email" placeholder="E-mail">
+            <div class="newsletter-box">
+              <input type="email" class="form-input-newsletter" name="email" placeholder="E-mail">
+            </div>
           </label>
           <button type="submit" class="newsletter-button">
             Zapisz się
@@ -467,19 +469,37 @@
           </label>
           <label class="form-label">
             <span class="label-text">Telefon</span>
-            <input type="tel" class="form-input" name="phone">
+            <div class="input-icon">
+              <svg class="form-icon" width="12" height="12">
+                <use href="./images/symbol-defs-new.svg#icon-tel"></use>
+              </svg>
+            <input type="text" class="form-input" name="name">
+          </div>
           </label>
           <label class="form-label">
             <span class="label-text">Email</span>
-            <input type="email" class="form-input" name="email">
+            <div class="input-icon">
+              <svg class="form-icon" width="12" height="12">
+                <use href="./images/symbol-defs-new.svg#icon-email"></use>
+              </svg>
+            <input type="text" class="form-input" name="name">
+          </div>
           </label>
           <label class="form-label">
             <span class="label-text">Komentarz</span>
+            <div class="comment-box">
             <textarea class="form-input-comment" name="feedback" rows="5" placeholder="Wprowadź tekst"></textarea>
+          </div>
           </label>
           <div class="form-rules">
             <div class="checkbox">
-              <input type="checkbox" class="modal-checkbox" name="approves" value="rulebook" id="rulebook">
+              <svg class="box-icon">
+                <use href="./images/symbol-defs-new.svg#icon-box"></use>
+              </svg>
+              <svg class="check-icon">
+                <use href="./images/symbol-defs-new.svg#icon-check"></use>
+              </svg>
+              <input type="checkbox" class="form-checkbox" name="approves" value="rulebook" id="rulebook">
               <label class="rules">Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a></label>
             </div>
             </div>
